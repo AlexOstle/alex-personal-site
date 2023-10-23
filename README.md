@@ -11,3 +11,5 @@ A simple personal website written using Flask.
 - Deploy to the cloud in a micro instance, use an SBC if I end up getting one to keep costs low.
 
 This is a lot to start with, I'm going to start slow and build up later when I have more time.
+
+[Link to my site here](https://alexostle.tech)
