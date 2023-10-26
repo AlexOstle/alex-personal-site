@@ -1,6 +1,13 @@
 // Any variable overrides here
+$primary: #FFF;
+$bg-primary: rgba(61, 61, 61, 0.75);
+$bg-primary-radial: rgba(0, 0, 0, 0.80);
 
 // Import bootstrap styles
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
 // Any custom styles here
+body {
+    background: radial-gradient(rgba(255, 255, 255, 0.00), $bg-primary-radial), linear-gradient($bg-primary, $bg-primary), url("../images/background.jpg") no-repeat;
+    background-size: 100vw 100vh;
+}
