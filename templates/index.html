@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/custom-styles.css') }}" />
-    <title>Alex Ostle</title>
-</head>
-<body>
-    <div class="text-primary">
-        Hello, World!
-        Welcome to Alex's website.
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="h-100 d-flex flex-column align-items-center justify-content-center">
+        <div class="profile-pic-container mb-2">
+            <img src="{{ url_for('static', filename='images/profilepic.jpg') }}" alt="Alexander Ostle" class="profile-pic">
+        </div>
+        <h1 class="text-primary">Alexander Ostle</h1>
+        <h2 class="text-primary">Computer Engineering Graduate</h2>
     </div>
-</body>
-</html>
+{% endblock %}

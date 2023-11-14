@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Scope+One&display=swap");
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -11979,4 +11980,38 @@ textarea.form-control-lg {
 body {
   background: radial-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8)), linear-gradient(rgba(61, 61, 61, 0.75), rgba(61, 61, 61, 0.75)), url("../images/background.jpg") no-repeat;
   background-size: 100vw 100vh;
+}
+
+h1, .h1 {
+  font-size: 4em;
+}
+
+h2, .h2 {
+  font-size: 2.5em;
+}
+
+#content {
+  height: 100vh;
+  width: 100vw;
+}
+
+.text-primary {
+  color: #FFF;
+  font-family: "Scope One", serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.profile-pic-container {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0px 0px 20px -5px #FFF;
+}
+
+.profile-pic {
+  height: 100%;
+  margin-left: -25%;
 }/*# sourceMappingURL=custom-styles.css.map */
