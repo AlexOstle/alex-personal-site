@@ -1,5 +1,6 @@
 // Import fonts
 @import url('https://fonts.googleapis.com/css2?family=Scope+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Scope+One&display=swap');
 
 // Any variable overrides here
 $primary: #FFF;
@@ -17,6 +18,24 @@ body {
     background-size: 100% 100vh;
 }
 
+nav {
+    background-color: #3d3d3d;
+    box-shadow: 0px 0px 4px 0px $primary;
+    width: 80%;
+}
+
+@media only screen and (min-width: 768px) {
+    nav {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    nav {
+        width: 40%;
+    }
+}
+
 #content {
     height: 100vh;
     width: 100vw;
@@ -30,11 +49,19 @@ body {
     line-height: normal;
 }
 
+.text-link {
+    color: $primary;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: $font-weight-normal;
+    line-height: normal;
+}
+
 .profile-pic-container {
     border-radius: 50%;
     overflow: hidden;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     box-shadow: 0px 0px 20px -5px $primary;
 }
 
@@ -45,5 +72,5 @@ body {
 
 .icon-primary {
     color: $primary;
-    font-size: 3rem;
+    font-size: 4rem;
 }
