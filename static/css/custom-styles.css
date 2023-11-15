@@ -12169,4 +12169,9 @@ body {
 .profile-pic {
   height: 100%;
   margin-left: -25%;
+}
+
+.icon-primary {
+  color: #FFF;
+  font-size: 3rem;
 }/*# sourceMappingURL=custom-styles.css.map */
