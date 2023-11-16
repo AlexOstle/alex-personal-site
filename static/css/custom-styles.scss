@@ -4,7 +4,9 @@
 
 // Any variable overrides here
 $primary: #FFF;
+$bg-dark: #222222;
 $bg-primary: rgba(61, 61, 61, 0.75);
+$bg-primary-solid: rgba(61, 61, 61, 1);
 $bg-primary-radial: rgba(0, 0, 0, 0.80);
 $font-size-base: 1.5rem;
 
@@ -13,11 +15,6 @@ $font-size-base: 1.5rem;
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
 // Any custom styles here
-body {
-    background: radial-gradient(rgba(255, 255, 255, 0.00), $bg-primary-radial), linear-gradient($bg-primary, $bg-primary), url("../images/background.jpg") no-repeat;
-    background-size: cover;
-}
-
 nav {
     background-color: #3d3d3d;
     box-shadow: 0px 0px 4px 0px $primary;
@@ -39,6 +36,9 @@ nav {
 #content {
     height: 100vh;
     width: 100vw;
+    background: radial-gradient(rgba(255, 255, 255, 0.00), $bg-primary-radial), linear-gradient($bg-primary, $bg-primary), url("../images/background.jpg") no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
 
 .text-primary {
@@ -55,6 +55,11 @@ nav {
     font-style: normal;
     font-weight: $font-weight-normal;
     line-height: normal;
+    text-decoration: none;
+}
+
+.text-link * {
+    text-decoration: none;
 }
 
 .profile-pic-container {
@@ -87,3 +92,20 @@ nav {
     color: $primary;
     font-size: 4rem;
 }
+
+.content-panel {
+    background-color: $bg-dark;
+    border-radius: 25px;
+    box-shadow: 0px 4px 15px 10px $bg-dark;
+}
+
+ul.arrow-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul.arrow-list li::before {
+    content: '➔';
+    margin-right: 0.5em;
+    left: 0;
+  }

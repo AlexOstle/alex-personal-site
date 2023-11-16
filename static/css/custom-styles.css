@@ -12141,11 +12141,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-body {
-  background: radial-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8)), linear-gradient(rgba(61, 61, 61, 0.75), rgba(61, 61, 61, 0.75)), url("../images/background.jpg") no-repeat;
-  background-size: cover;
-}
-
 nav {
   background-color: #3d3d3d;
   box-shadow: 0px 0px 4px 0px #FFF;
@@ -12165,6 +12160,9 @@ nav {
 #content {
   height: 100vh;
   width: 100vw;
+  background: radial-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8)), linear-gradient(rgba(61, 61, 61, 0.75), rgba(61, 61, 61, 0.75)), url("../images/background.jpg") no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }
 
 .text-primary {
@@ -12181,6 +12179,11 @@ nav {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  text-decoration: none;
+}
+
+.text-link * {
+  text-decoration: none;
 }
 
 .profile-pic-container {
@@ -12210,4 +12213,21 @@ nav {
 .icon-primary {
   color: #FFF;
   font-size: 4rem;
+}
+
+.content-panel {
+  background-color: #222222;
+  border-radius: 25px;
+  box-shadow: 0px 4px 15px 10px #222222;
+}
+
+ul.arrow-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul.arrow-list li::before {
+  content: "➔";
+  margin-right: 0.5em;
+  left: 0;
 }/*# sourceMappingURL=custom-styles.css.map */
