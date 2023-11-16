@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/custom-styles.css') }}" />
-    <script src="https://kit.fontawesome.com/f535ce0f65.js" crossorigin="anonymous"></script>
+    {% block head %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/custom-styles.css') }}" />
+        <script src="https://kit.fontawesome.com/f535ce0f65.js" crossorigin="anonymous"></script>
     <title>{% block title %}Alex Ostle{% endblock %}</title>
+    {% endblock %}
 </head>
 <body>
     <div id="content">
